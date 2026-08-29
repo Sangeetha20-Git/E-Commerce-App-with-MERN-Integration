@@ -23,7 +23,6 @@ app.get("/", (req, res) => {
     res.send("E-Commerce Backend is Running...");
 });
 
-// Only start a local server when running server.js directly
 if (require.main === module) {
     connectDB();
 
@@ -34,5 +33,4 @@ if (require.main === module) {
     });
 }
 
-// Export Express app for Vercel
 module.exports = app;
